@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.attribution {
+  display: none;
+}
+
+html {
+  min-height: 100vh;
+}
+
+body {
+  min-height: 100vh;
+  background-color: hsl(204, 43%, 93%);
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 95%;
+  min-height: 80vh;
+  max-width: 720px;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.top {
+  background-color: hsl(0, 0%, 100%);
+  grid-column: 1/-1;
+  color: hsl(218, 22%, 67%);
+  border-radius: 0.5rem 0.5rem 0 0;
+  display: grid;
+  place-items: center;
+  padding-block: 2rem;
+}
+.top .title {
+  margin-block: 1rem;
+  color: hsl(179, 62%, 43%);
+  font-size: clamp(1rem, 1.5rem + 1vw, 4rem);
+}
+.top .subtitle {
+  margin-block: 0.5rem;
+  color: hsl(71, 73%, 54%);
+  font-size: clamp(0.8rem, 1rem + 1vw, 4rem);
+}
+
+.top,
+.left,
+.right {
+  padding-inline: 1rem;
+}
+
+.left,
+.right {
+  height: 17rem;
+  color: hsl(204, 43%, 93%);
+  padding-block: 2rem;
+}
+
+.left {
+  background-color: hsl(179, 62%, 43%);
+}
+.left .price {
+  font-size: 32px;
+  margin-right: 1rem;
+}
+.left .button {
+  width: 100%;
+  cursor: pointer;
+  text-align: center;
+  padding: 0.75rem;
+  font-weight: 700;
+  border-radius: 0.25rem;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(71, 73%, 54%);
+}
+
+.top__content,
+.left__content,
+.right__content {
+  padding-inline: clamp(0.5rem, 0.5rem + 0.5vw, 2rem);
+  width: 100%;
+}
+
+.left__content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.left__content .subtitle {
+  order: 1;
+  margin-top: -0.5rem;
+}
+.left__content .price-content {
+  order: 2;
+  color: hsl(195, 51%, 83%);
+}
+.left__content span {
+  color: hsl(204, 43%, 93%);
+}
+.left__content .description {
+  order: 3;
+}
+.left__content .button {
+  margin-top: 0.25rem;
+  order: 4;
+}
+
+.right {
+  background-color: hsl(179, 48%, 54%);
+  color: hsl(195, 51%, 83%);
+}
+.right .subtitle {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: hsl(0, 0%, 100%);
+}
+.right li {
+  margin-block: 0.1rem;
+  font-size: 14px;
+}
+
+@media (max-width: 40em) {
+  .container {
+    display: block;
+  }
+  .right {
+    border-radius: 0 0 0.5rem 0.5rem;
+  }
+}
+@media (min-width: 40em) {
+  .left {
+    border-bottom-left-radius: 0.5rem;
+  }
+  .right {
+    border-bottom-right-radius: 0.5rem;
+  }
+}

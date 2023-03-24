@@ -1,0 +1,30 @@
+//import typeface here
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+//Colors
+$clr-primary-100: hsl(179, 62%, 43%);
+$clr-primary-150: hsl(179, 48%, 54%);
+$clr-primary-200: hsl(71, 73%, 54%);
+
+$clr-neutral-50: hsl(195, 51%, 83%);
+$clr-neutral-100: hsl(204, 43%, 93%);
+$clr-neutral-200: hsl(218, 22%, 67%);
+$clr-neutral-300: hsl(0, 0%, 100%);
+
+//typography
+$ff-primary: "Karla", sans-serif;
+$fw-400: 400;
+$fw-700: 700;
+
+$fz-200: 14px;
+$fz-300: 16px;
+$fz-600: 32px;
+
+//sizes
+$size-300: 3rem;
+$size-200: 2rem;
+$size-100: 1rem;
+$size-75: 0.75rem;
+$size-50: 0.5rem;
+$size-25: 0.25rem;
+$size-10: 0.1rem;
